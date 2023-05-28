@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <!-- or -->
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;1,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href=""class="logo">Meajudalore</i></a>
+
+
+    <ul class="navegador">
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Catalogo</a></li>
+        <li><a href="#">Contato</a></li>
+    </ul>
+    <div class="headericones">
+    <div class="instagram"><i class='bx bxl-instagram'></i></div>
+    <div id="whatsapp"><i class='bx bxl-whatsapp' ></i></div>
+    </div>
+</header>
+
+<section class="home">
+    <div class="home-img">
+        <img src="/Imagemprincipal/oneimg.png" class="one">
+    </div>
+    <div class="home-text">
+        <h1>lorem ipsorem <br> ipsorem</h1>
+        <h5>lorem ipsorem shelter loresen kliv</h5>
+        <h3>$70.99</h3>
+        <a href="#" class="btn">Compre Agora</a>
+    </div>
+</section>
+
+<div class="main">
+    <div class="row">
+        <li>
+            <img src="imagens/row1.png" onclick="slider('/Imagemprincipal/oneimg.png')">
+        </li>
+    </div>
+
+    <div class="row2">
+        <li>
+            <img src="/imagens/row1.png" onclick="slider('/Imagemprincipal/twoimg.png')">
+        </li>
+    </div>
+
+    <div class="row3">
+        <li>
+            <img src="imagens/row1.png" onclick="slider('/Imagemprincipal/threeimg.png')">
+        </li>
+    </div>
+</div>
+
+
+<script>
+    function slider (anything){
+        document.querySelector ('.one') .src = anything;
+    };
+
+   let menu = document.querySelector ('#menu-icon');
+   let navbar = document.querySelector ('.navbar');
+
+   menu.onclick = () => {
+    menu.classList.toggle ('bx-x');
+    navbar.classList.toggle ('open');
+   }
+</script>
+</body> 
+</html>
